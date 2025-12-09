@@ -37,7 +37,7 @@ async (conn, mek, m, { from, args, q, reply }) => {
         waitMsg = await conn.sendMessage(from, { text: "*APKI TIKTOK VIDEO DOWNLOAD HO RAHI HAI ☺️*\n*JAB COMPLETE HO JAYE GE TO YAHA BHEJ DE JAYE GE 🥰*" });
 
         // 🔥 NEW TikWM API
-        const apiUrl = `https://tikwm.com/api/?url=${encodeURIComponent(q)}`;
+        const apiUrl = `https://delirius-apiofc.vercel.app/download/tiktok?url=`;
         const { data } = await axios.get(apiUrl);
 
         if (!data || data.code !== 0 || !data.data.play) {
