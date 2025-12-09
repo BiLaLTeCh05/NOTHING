@@ -1,7 +1,7 @@
 const { cmd } = require('../command');
 const axios = require('axios');
 
-const api = "https://facebook-downloader-chamod.vercel.app/api/fb";
+const api = "https://facebook-downloader.chamodshadow125.workers.dev/api/fb?url=https://www.facebook.com/share/v/1Kzm9VAG6g/";
 
 cmd({
     pattern: "fb",
